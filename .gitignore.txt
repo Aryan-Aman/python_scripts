@@ -1,0 +1,11 @@
+# Ignore virtual environment folder (replace 'venv' with your env folder's name if different)
+snippetsENV/
+
+# Ignore temporary files
+*.ini
+
+# Ignore Python cache and other system files
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
