@@ -5,6 +5,6 @@ def introduce(name='Aman'):
 introduce()
 
 try:
-    print (say_hi())
+    print (say_hi('User')) #say_hi is not available outside of introduce
 except Exception as e:
     print (e)
