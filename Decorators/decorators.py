@@ -16,3 +16,9 @@ def isolated_func():
 
 isolated_func_decorated=decorator(isolated_func) #this is same as @decorator
 isolated_func_decorated()
+
+@decorator
+def another_isolated_func():
+    print('dont touch me')
+
+another_isolated_func()
