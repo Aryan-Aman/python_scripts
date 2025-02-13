@@ -1,16 +1,15 @@
-def greet(name='chief'):
-    
-    def casual_greet(name='buddy'):
-        return f"Hi, {name.upper()} whats's up?!!"
-    def formal_greet(name='sir'):
+def greet(style='formal'): 
+    '''Default is "formal" ,If no argument is passed when calling 
+    get_greeting(), Python automatically assigns style = "formal" '''
+
+    def formal(name='sir'):
         return f"Hello, {name.upper()} best regards!!"
+    def casual(name='buddy'):
+        return f"Hi, {name.upper()} whats's up?!!"
     
-    if name=='chief':
-        return formal_greet
-    else:
-        return casual_greet
+    return formal if style == 'formal' else casual
 
 say=greet()
 print(say) #say is a function object here
-print(say('chief Aman'))
-print(greet('casual_greet')('another Buddy'))
+print(say('chiefsirr'))
+print(greet('notformal')('another Buddy'))
